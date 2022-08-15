@@ -1,0 +1,945 @@
+<!doctype html>
+<html lang="en">
+<!--TODO: Add text gradients and gradient backgrounds. Modify typo-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concordia Genome Foundry</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-background {
+            background: linear-gradient(to right top, #01847f, #007c8a, #007293, #006697, #005995, #004e8b, #014381, #043877, #052e67);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top bg-light">
+        <div class="container-lg">
+            <a class="navbar-brand" href="#">
+                <img src="assets\images\logo\genome_foundry_logo.svg" width="200px" alt="genome foundry logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyAbout">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#scrollspyServices"
+                            role="button" aria-expanded="false">Services</a>
+                        <ul class="dropdown-menu rounded-0">
+                            <li><a class="dropdown-item" href="#scrollspyAssembly">High-Throughput DNA Assembly</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyMicrobial">Microbial Engineering</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyMammalian">Mammalian Cell Engineering</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyScreening">High-Throughput Screening</a></li>
+                            <li><a class="dropdown-item" href="#scrollspyDNA">High Quality Synthetic DNA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyTeam">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyPartners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyOpportunities">Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary ms-2 text-white fw-semibold" href="#scrollspyContact">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy bg-light" tabindex="0">
+        <header class="masthead bg-light" style="padding-top: 9.5rem; padding-bottom: 9.5rem;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-7">
+                        <div class="mb-5 mb-lg-0">
+                            <h1 class="display-1 mb-3">
+                                The power of <span class="fw-semibold gradient-text">automation</span> at the
+                                service of <span class="fw-semibold gradient-text">biology</span></h1>
+                            <p class="lead fw-normal text-muted mb-5 col-sm-6">
+                                As a cutting edge innovator, what will you
+                                build and test at a scale of 1,000? 100,000?
+                                Build More. Test More.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <svg class="text-primary" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#01847f;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#014381;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50" fill="url(#grad1)"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="scrollspyAboutC" class="py-4 collapse">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-8 ms-auto align-self-end text-end">
+                        <h2 class="pt-3">About Us</h2>
+                        <p class="display-3 mb-4">The Concordia Genome Foundry is Canada’s platform for synthetic
+                            biology.
+                        </p>
+                        <p class="lead fw-normal text-muted mb-5 col-sm-6 ms-auto">
+                            We use lab automation to provide academics and
+                            companies with services to engineer biology at a scale beyond manual methods.
+                        </p>
+                    </div>
+                </div>
+                <div class="container marketing">
+                    <div class="row">
+                        <div class="col-lg-3 mb-5">
+                            <div class="mb-3">
+                                <img class="img-fluid" src="assets\images\photos\20150908 District 3 offices 015.jpg"
+                                    alt="">
+                            </div>
+                            <h3 class="">Test More</h3>
+                            <p class="lead fw-normal text-muted">Experiment at scale of 96,384, and larger. Every day.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mb-5">
+                            <div class="mb-3">
+                                <img class="img-fluid" src="assets\images\photos\20150908 District 3 offices 015.jpg"
+                                    alt="">
+                            </div>
+                            <h3 class="">Save time</h3>
+                            <p class="lead fw-normal text-muted">More shots on goal gets you results faster.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mb-5">
+                            <div class="mb-3">
+                                <img class="img-fluid" src="assets\images\photos\20150908 District 3 offices 015.jpg"
+                                    alt="">
+                            </div>
+                            <h3 class="">Save Money</h3>
+                            <p class="lead fw-normal text-muted">Access equipment and experts, without having to find
+                                your own.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 mb-5">
+                            <div class="mb-3">
+                                <img class="img-fluid" src="assets\images\photos\20150908 District 3 offices 015.jpg"
+                                    alt="">
+                            </div>
+                            <h3 class="">Support for commercialization</h3>
+                            <p class="lead fw-normal text-muted">1:1 coaching with businesses and biotech experts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyAbout" class="py-4 ">
+            <div class="container-lg pt-3">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 order-xl-2">
+                        <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">About Us
+                        </h2>
+                        <p class="display-3 mb-4">The Concordia Genome Foundry is Canada’s platform for synthetic
+                            biology.
+                        </p>
+                        <p class="lead fw-normal text-muted mb-5 col-sm-6">
+                            We use lab automation to provide academics and
+                            companies with services to engineer biology at a scale beyond manual methods.
+                        </p>
+                    </div>
+                    <div class="col-xl-6 order-xl-1">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <img class="img-fluid"
+                                        src="assets\images\photos\20150908 District 3 offices 015.jpg" alt="">
+                                </div>
+                                <h3 class="">Test More</h3>
+                                <p class="lead fw-normal text-muted">Experiment at scale of 96,384, and larger. Every
+                                    day.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <img class="img-fluid"
+                                        src="assets\images\photos\20150908 District 3 offices 015.jpg" alt="">
+                                </div>
+                                <h3 class="">Save time</h3>
+                                <p class="lead fw-normal text-muted">More shots on goal gets you results faster.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <img class="img-fluid"
+                                        src="assets\images\photos\20150908 District 3 offices 015.jpg" alt="">
+                                </div>
+                                <h3 class="">Save Money</h3>
+                                <p class="lead fw-normal text-muted">Access equipment and experts, without having to
+                                    find
+                                    your own.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <img class="img-fluid"
+                                        src="assets\images\photos\20150908 District 3 offices 015.jpg" alt="">
+                                </div>
+                                <h3 class="">Support for commercialization</h3>
+                                <p class="lead fw-normal text-muted">1:1 coaching with businesses and biotech experts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyAboutC2" class="py-4 collapse">
+            <div class="container-lg pt-3">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 order-lg-2">
+                        <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">About Us
+                        </h2>
+                        <p class="display-3 mb-4">The Concordia Genome Foundry is Canada’s platform for synthetic
+                            biology.
+                        </p>
+                        <p class="lead fw-normal text-muted mb-5 col-sm-6">
+                            We use lab automation to provide academics and
+                            companies with services to engineer biology at a scale beyond manual methods.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="row mb-3">
+                            <div class="col p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-file-bar-graph display-3 gradient-text"></i>
+                                </div>
+                                <h3 class="">Test More</h3>
+                                <p class="lead fw-normal text-muted">Experiment at scale of 96,384, and larger. Every
+                                    day.
+                                </p>
+                            </div>
+                            <div class="col p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-fast-forward-circle display-3 gradient-text"></i>
+                                </div>
+                                <h3 class="">Save time</h3>
+                                <p class="lead fw-normal text-muted">More shots on goal gets you results faster.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-piggy-bank display-3 gradient-text"></i>
+                                </div>
+                                <h3 class="">Save Money</h3>
+                                <p class="lead fw-normal text-muted">Access equipment and experts, without having to
+                                    find
+                                    your own.
+                                </p>
+                            </div>
+                            <div class="col p-4">
+                                <div class="mb-3">
+                                    <i class="bi bi-people display-3 gradient-text"></i>
+                                </div>
+                                <h3 class="">Support for commercialization</h3>
+                                <p class="lead fw-normal text-muted">1:1 coaching with businesses and biotech experts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyServices" class="py-4 ">
+            <div class="container-lg pt-3">
+                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Services</h2>
+                <div class="col-lg-10 align-self-start">
+                    <p class="display-3 mb-4">Build More. Test More.
+                        </br>Services to accelerate your science.
+                    </p>
+                    <p class="lead fw-normal text-muted mb-5 col-sm-6">
+                        Priced for cost-recovery.
+                        Keep your IP.
+                    </p>
+                </div>
+                <div class="container marketing">
+                    <div class="row gradient-background mb-5 me-md-5">
+                        <div class="col-md-5 m-0 p-0"
+                            style="background: url('/assets/images/photos/20150908\ District\ 3\ offices\ 015.jpg') center center; background-size:cover; min-height:310px">
+                        </div>
+                        <div class="col-md-7 p-5">
+                            <h3 id="scrollspyAssembly" class="display-5 mb-5 text-white">High-Throughput DNA Assembly
+                            </h3>
+                            <p class="lead fw-normal text-light">
+                                >1500 plasmid assemblies/day</br>
+                                Automated DNA fragment analysis, ddPCR, qPCR</br>
+                                Large scale prep of transfection-grade DNA
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gradient-background mb-5 ms-md-5">
+                        <div class="col-md-5 m-0 p-0 order-md-2"
+                            style="background: url('/assets/images/photos/20150908\ District\ 3\ offices\ 015.jpg') center center; background-size:cover; min-height:310px">
+                        </div>
+                        <div class="col-md-7 p-5 order-md-1">
+                            <h3 id="scrollspyMicrobial" class="display-5 mb-5 text-white">Microbial Engineering</h3>
+                            <p class="lead fw-normal text-light">
+                                >300 transformations & nucleic acid extractions/day</br>
+                                Automated colony picking</br>
+                                Microlitre to >100L culturing capacity
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gradient-background mb-5 me-md-5">
+                        <div class="col-md-5 m-0 p-0"
+                            style="background: url('/assets/images/photos/20150908\ District\ 3\ offices\ 015.jpg') center center; background-size:cover; min-height:310px">
+                        </div>
+                        <div class="col-md-7 p-5">
+                            <h3 id="scrollspyMammalian" class="display-5 mb-5 text-white">Mammalian Cell Engineering
+                            </h3>
+                            <p class="lead fw-normal text-light">
+                                Generation and expansion of edited iPSC lines</br>
+                                State-of-the-art cell culture, QC for pluripotency</br>
+                                Multimode cell imaging
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row gradient-background mb-5 ms-md-5">
+                        <div class="col-md-5 m-0 p-0 order-md-2"
+                            style="background: url('/assets/images/photos/20150908\ District\ 3\ offices\ 015.jpg') center center; background-size:cover; min-height:310px">
+                        </div>
+                        <div class="col-md-7 p-5 order-md-1">
+                            <h3 id="scrollspyScreening" class="display-5 mb-5 text-white">High-Throughput Screening</h3>
+                            <p class="lead fw-normal text-light">
+                                96 autosampler LC-MS</br>
+                                Acoustic, bulk, & traditional liquid handling solutions</br>
+                                FACS, autosampling flow cytometer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyDNAC" class="py-4  collapse">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-8 ms-auto align-self-end text-end">
+                        <h2 class="pt-3">Supply</h2>
+                        <p class="display-3 mb-4">High Quality Synthetic DNA from a Canadian Supplier
+                        </p>
+                        <p class="lead fw-normal text-muted mb-5 ms-auto col-sm-6">
+                            All Genome Foundry users and laboratories belonging to the Concordia University Centre for
+                            Applied Synthetic Biology receive significant discounts on gene synthesis, provided by <a
+                                href="https://www.ranomics.com/">Ranomics</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card rounded-0 mb-4">
+                            <div class="card-header">
+                                <h3 class="card-title pricing-card-title fw-semibold p-3">
+                                    <span class="mb-2 d-block">
+                                        <span class="fs-1">5%</span>
+                                        <small class="text-muted fw-light">discount on</small></span>
+                                    Q-STRAND DNA fragments <sup><a href="https://www.ranomics.com/q-strand"><i
+                                                class="bi bi-question-circle-fill"></i></a></sup>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Double stranded DNA, with no limitation on the number of
+                                        non-standard nucleotides.</li>
+                                    <li class="list-group-item">Integrate any IUPAC nucleotides (N, K, R, Y, S, W, M, B,
+                                        D, H or V) anywhere in DNA fragment.</li>
+                                    <li class="list-group-item">Receive fragments in single tubes or 96-well plate
+                                        formats.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="card rounded-0 mb-4">
+                            <div class="card-header">
+                                <h3 class="card-title pricing-card-title fw-semibold p-3">
+                                    <span class="mb-2 d-block">
+                                        <span class="fs-1">15%</span>
+                                        <small class="text-muted fw-light">discount on</small></span>
+                                    DNA Variant and Mutagenesis Libraries
+                                    <sup><a href="https://www.ranomics.com/variant-libraries"><i
+                                                class="bi bi-question-circle-fill"></i></a></sup>
+                                </h3>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Precise libraries of long gene sequences (>5kb).</li>
+                                    <li class="list-group-item">Mutate residues in complex (high- / low-GC) regions.
+                                    </li>
+                                    <li class="list-group-item">Control codon distribution for multiple residues.</li>
+                                    <li class="list-group-item">Readily mutate continuous and discontinuous residues
+                                        easily.</li>
+                                    <li class="list-group-item">DNA variant libraries are shipped in 4-6 weeks and can
+                                        be delivered as linear fragments or cloned vectors, as pooled or arrayed
+                                        libraries.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyDNA" class="py-4 ">
+            <div class="container-lg pt-3">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6">
+                        <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Supply</h2>
+                        <p class="display-3 mb-4">High Quality Synthetic DNA from a Canadian Supplier
+                        </p>
+                        <p class="lead fw-normal text-muted mb-5 col-md-8">
+                            All Genome Foundry users and laboratories belonging to the Concordia University Centre for
+                            Applied Synthetic Biology receive significant discounts on gene synthesis, provided by <a
+                                href="https://www.ranomics.com/" target="_blank">Ranomics</a>.
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div id="accordionDiscount1" class="accordion">
+                            <div class="accordion-item rounded-0 mb-4">
+                                <div class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        <h3 class="fw-semibold p-3">
+                                            <span class="mb-2 d-block">
+                                                <span class="fs-1 gradient-text">5%</span>
+                                                <small class="text-muted fw-light">discount on</small></span>
+                                            Q-STRAND DNA fragments <sup><a href="https://www.ranomics.com/q-strand" target="_blank"><i
+                                                        class="bi bi-question-circle-fill"></i></a></sup>
+
+                                        </h3>
+                                    </button>
+                                </div>
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionDiscount1">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Double stranded DNA, with no limitation on the
+                                                number of
+                                                non-standard nucleotides.</li>
+                                            <li class="list-group-item">Integrate any IUPAC nucleotides (N, K, R, Y, S,
+                                                W,
+                                                M, B,
+                                                D, H or V) anywhere in DNA fragment.</li>
+                                            <li class="list-group-item">Receive fragments in single tubes or 96-well
+                                                plate
+                                                formats.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="accordionDiscount2" class="accordion">
+                            <div class="accordion-item rounded-0 mb-4">
+                                <div class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-0" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <h3 class="fw-semibold p-3">
+                                            <span class="mb-2 d-block">
+                                                <span class="fs-1 gradient-text">15%</span>
+                                                <small class="text-muted fw-light">discount on</small></span>
+                                            DNA Variant and Mutagenesis Libraries
+                                            <sup><a href="https://www.ranomics.com/variant-libraries" target="_blank"><i
+                                                        class="bi bi-question-circle-fill"></i></a></sup>
+                                        </h3>
+                                    </button>
+                                </div>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionDiscount2">
+                                    <div class="accordion-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">Precise libraries of long gene sequences (>5kb).
+                                            </li>
+                                            <li class="list-group-item">Mutate residues in complex (high- / low-GC)
+                                                regions.
+                                            </li>
+                                            <li class="list-group-item">Control codon distribution for multiple
+                                                residues.</li>
+                                            <li class="list-group-item">Readily mutate continuous and discontinuous
+                                                residues
+                                                easily.</li>
+                                            <li class="list-group-item">DNA variant libraries are shipped in 4-6 weeks
+                                                and can
+                                                be delivered as linear fragments or cloned vectors, as pooled or arrayed
+                                                libraries.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </section>
+        <div class="gradient-background pt-5 mb-5">
+            <section id="scrollspyTeam" class="py-4">
+                <div class="container-lg">
+                    <h2 class="pt-3 fw-semibold text-white">Meet the team</h2>
+                    <div class="row justify-content-center mb-3">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Kevin.png"
+                                            alt="Kevin Jacquet (PhD)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/kevin-jacquet-ph-d-0a8a52b6/"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Kevin Jacquet (PhD)</h4>
+                                    <p class="text-light">Platform Coordinator</p>
+                                </div>
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Nicholas.png"
+                                            alt="Nicholas Gold (MSc)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Nicholas Gold (MSc)</h4>
+                                    <p class="text-light">Platform Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Angela.png"
+                                            alt="Angela Quach (MSc)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/angela-quach-6648a4189"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Angela Quach (MSc)</h4>
+                                    <p class="text-light">Cell Editing Specialist </p>
+                                </div>
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\James.png"
+                                            alt="James Bagley (MSc)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/james-bagley-410228aa" target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                            <a href="https://github.com/JamesBagley" target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-github"></i>
+                                                    <span class="visually-hidden">Github</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">James Bagley (MSc)</h4>
+                                    <p class="text-light">Lab Automation Specialist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Audrey.png"
+                                            alt="Audrey Morin (MSc)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/audrey-morin-57236489" target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Audrey Morin (MSc)</h4>
+                                    <p class="text-light">Research & Administrative Coordinator</p>
+                                </div>
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Flavia.png"
+                                            alt="Flavia Araujo (PhD)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/flaviarba" target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                            <a href="https://github.com/frba" target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-github"></i>
+                                                    <span class="visually-hidden">Github</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Flavia Araujo (PhD)</h4>
+                                    <p class="text-light">Computer Scientist</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Benjamin.png"
+                                            alt="Benjamin Scott (PhD)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/benjaminmscott" target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Benjamin Scott (PhD)</h4>
+                                    <p class="text-light">Advisor, Business Development</p>
+                                </div>
+                                <div class="col p-5">
+                                    <div class="position-relative">
+                                        <img class="img-fluid " src="assets\images\team\Vincent.png"
+                                            alt="Vincent Martin (PhD)">
+                                        <div class="btn-group bg-light position-absolute bottom-0 end-0">
+                                            <a href="https://www.linkedin.com/in/vincent-martin-233487158"
+                                                target="_blank">
+                                                <button type="button" class="btn btn-outline-primary rounded-0">
+                                                    <i class="bi bi-linkedin"></i>
+                                                    <span class="visually-hidden">LinkedIn</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-white pt-3">Vincent Martin (PhD)</h4>
+                                    <p class="text-light">Director</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="scrollspyPartners" class="py-4">
+                <div class="container-lg">
+                    <h2 class="pt-3 fw-semibold text-white">Our Partners</h2>
+                    <div class="row align-items-center mb-3 px-4">
+                        <div class="col-md-4 p-5">
+                            <img class="img-fluid"
+                                src="assets\images\partners\National_Research_Council_of_Canada_logo_white.png"
+                                alt="National Research Council of Canada logo">
+                        </div>
+                        <div class="col-md-4 p-5">
+                            <img class="img-fluid" src="assets\images\partners\CFI_white.png"
+                                alt="Canada Foundation for Fnnovation logo">
+                        </div>
+                        <div class="col-md-4 p-5">
+                            <img class="img-fluid" src="assets\images\partners\Concordia-logo-white.png"
+                                alt="Concordia University logo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="scrollspyOpportunities" class="py-4 ">
+            <div class="container-lg">
+                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Opportunities</h2>
+                <div class="row px-3">
+                    <div class="card rounded-0 my-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Research Assistant, Microbial Genome Engineering</h5>
+                                <h4 class="card-subtitle mb-2 text-muted">Multiple positions available</h6>
+                                    <p class="card-text">The Concordia Centre for Applied Synthetic Biology (CASB) has
+                                        an urgent
+                                        need for multiple Research Assistants with a background in applied synthetic
+                                        biology.
+                                        The Research Assistants are needed to support the microbial genome engineering
+                                        activities of the Genome Foundry.</p>
+                                    <a href="#" class="card-link" data-bs-toggle="modal"
+                                        data-bs-target="#ResearchJob">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ResearchJob" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="ResearchJobLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content rounded-0">
+                                <div class="modal-header align-items-start">
+                                    <div>
+                                        <h3 class="modal-title mb-2" id="staticBackdropLabel">Research Assistant,
+                                            Microbial Genome Engineering</h3>
+                                        <h4 class="modal-subtitle text-muted" id="staticBackdropLabel">Multiple
+                                            positions available</h4>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group rounded-0">
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Classification:</div>
+                                            Research Assistant under the CARE union at Concordia University
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Salary:</div>
+                                            $27.37/hr
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Weekly Hours:</div>
+                                            35
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Duration: </div>
+                                            1 year, renewable
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Start Date: </div>
+                                            as of August 2022
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Principal Investigator or Immediate Supervisor: </div>
+                                            Dr. Vincent Martin
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Location: </div>
+                                            7141 Sherbrooke St West, GE building,
+                                            Montreal, QC, H4B 1R6
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="fw-bold">Unit: </div>
+                                            Centre for Applied Synthetic Biology at
+                                            Concordia University
+                                        </li>
+                                    </ul>
+
+                                    <h5 class="my-4">Scope</h5>
+
+                                    <p>The Concordia Centre for Applied Synthetic Biology (CASB) is Canada’s first
+                                        research centre focused on Synthetic Biology. The Centre houses the Genome
+                                        Foundry for Synthetic Biology, a unique CFI- and NRC-funded technology platform
+                                        that aspires
+                                        to accelerate the design-build-test cycle of biological engineering
+                                        (www.concordia.ca/casb).
+                                        </br></br>
+                                        The Centre has an urgent need for multiple Research Assistants with a background
+                                        in applied synthetic biology. The Research Assistants are needed to support the
+                                        microbial genome engineering activities of the Genome Foundry. These activities
+                                        include but are not limited to high-throughput genome editing using the Genome
+                                        Foundry’s automation and LIMS platforms.
+                                        </br></br>
+                                        The Research Assistants will report to the Microbial Suite Platform Coordinator,
+                                        Nicholas Gold, and set priorities in consultation with the Centre Director, Dr.
+                                        Vincent Martin, and Genome Foundry Platform Coordinators.
+                                        </br></br>
+                                        These are key positions of the Genome Foundry; the Research Assistants will need
+                                        to display a high level of initiative, drive, and accountability.
+                                    </p>
+
+                                    <h5 class="my-4">Primary responsibilities</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Coordinate work and report to the Platform
+                                            Coordinators to develop and streamline
+                                            workflows.</li>
+                                        <li class="list-group-item">Perform validated day-to-day operations in support
+                                            of platform research activities.</li>
+                                        <li class="list-group-item">Responsible for operating and maintaining automated
+                                            instrumentation.</li>
+                                        <li class="list-group-item">Responsible for upkeep of inventory (consumables,
+                                            DNA stocks, strain collection).</li>
+                                        <li class="list-group-item">Work in interdisciplinary teams and collaborate with
+                                            scientists on several projects
+                                            in parallel.</li>
+                                    </ul>
+
+                                    <h5 class="my-4">Qualifications</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Master’s or equivalent qualification in Biology or
+                                            relevant field.</li>
+                                        <li class="list-group-item">Minimum of three years of relevant work experience
+                                            or the equivalent combination of education and experience.</li>
+                                        <li class="list-group-item">Proficiency in current molecular biology techniques
+                                            (e.g. CRISPR, Golden Gate, homologous recombination).</li>
+                                        <li class="list-group-item">Experience with yeast culturing and genetics is an
+                                            asset.</li>
+                                        <li class="list-group-item">Experience with laboratory automation an asset.</li>
+                                        <li class="list-group-item">Experience with next-generation sequencing library
+                                            preparation an asset.</li>
+                                        <li class="list-group-item">Experience with programing (Python or R) is an
+                                            asset.</li>
+                                    </ul>
+
+                                    <h5 class="my-4">Application Instructions</h5>
+                                    <p>The position is available immediately. Applicants should send (by e-mail) their
+                                        curriculum vitae, the names and contact information of three referees, and cover
+                                        letter to the address below. Only selected candidates will be contacted.</p>
+
+                                    <p><b>Audrey Morin</b></br>
+                                        Research and Administrative Coordinator</br>
+                                        Centre for Applied Synthetic Biology, GE120.23</br>
+                                        <a href="mailto:GenomeFoundry@concordia.ca">GenomeFoundry@concordia.ca</a>
+                                    </p>
+
+                                    <h5 class="my-4">Perks & Benefits</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Working in the Genome Foundry's cutting-edge
+                                            facility</li>
+                                        <li class="list-group-item">Competitive salary</li>
+                                        <li class="list-group-item">On-site Health Services Clinic</li>
+                                        <li class="list-group-item">Pension plan</li>
+                                        <li class="list-group-item">Paid parental leave</li>
+                                        <li class="list-group-item">Flexible paid vacation</li>
+                                        <li class="list-group-item">Daily shuttle bus to and from downtown Montreal</li>
+                                        <li class="list-group-item">On-site gym and parking for a fee</li>
+                                        <li class="list-group-item">Learning resources</li>
+                                    </ul>
+
+                                    <h5 class="my-4">Equal opportunity</h5>
+                                    <p>Concordia University hires on the basis of merit and is committed to employment
+                                        equity. We encourage all qualified applicants to apply. In accordance with
+                                        Canadian Immigration requirements, priority will be given to Canadian citizens
+                                        and Permanent Residents.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <a href="mailto:GenomeFoundry@concordia.ca">
+                                        <button type="button" class="btn btn-primary rounded-0">Apply</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="scrollspyContact" class="py-4 ">
+            <div class="container-lg">
+                <h2 class="gradient-background p-2 text-white fw-semibold" style="width:fit-content">Contact Us</h2>
+                <div class="row">
+                    <div class="col-md-5 my-3">
+                        <h5 class="mb-3">Contact Information</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light">
+                                <span>
+                                    <i class="bi bi-envelope text-primary me-2 fs-4"></i>
+                                </span> <a href="mailto:genomefoundry@concordia.ca"
+                                    class="text-reset">genomefoundry@concordia.ca</a>
+                            </li>
+                            <li class="list-group-item bg-light">
+                                <span>
+                                    <i class="bi bi-telephone text-primary me-2 fs-4"></i>
+                                </span> <a href="tel:+15148482424;2438" class="text-reset">(514) 848-2424 ext. 2438</a>
+                            </li>
+                            <li class="list-group-item d-flex bg-light">
+                                <span>
+                                    <i class="bi bi-geo-alt text-primary me-2 fs-4"></i>
+                                </span> 7141 Rue Sherbrooke Ouest, </br> Montréal, H4B 1R6
+                            </li>
+                        </ul>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5597.274156403949!2d-73.64867448806763!3d45.45696899788426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9172e70050287%3A0xc4df37b92817328e!2sCentre%20for%20Structural%20and%20Functional%20Genomics%20(GE)!5e0!3m2!1sen!2sca!4v1653612428712!5m2!1sen!2sca"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="form-floating col-md-7 my-3">
+                        <h5 class="mb-3">Contact Form</h5>
+                        <div class="row  mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Full Name" aria-label="Full Name">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Subject"
+                                    aria-label="Subject"></input>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <textarea type="text" class="form-control" placeholder="Message" aria-label="Message"
+                                    rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mb-3 rounded-0">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container-lg py-4 my-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-top mb-4">
+            <div class="d-flex flex-wrap justify-content-start align-items-center pb-5">
+                <div class="pb-3">
+                    <img src="assets\images\logo\genome_foundry_logo.svg" width="200px" alt="genome foundry logo">
+                </div>
+                <div class="pb-3 ps-3">
+                    <img src="assets\images\partners\concordia-university-logo-vector-cropped.svg" width="200px"
+                        alt="concordia university logo">
+                </div>
+            </div>
+            <ul class="nav justify-content-end d-flex">
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+        </div>
+        <span class="text-muted">&copy; Concordia Genome Foundry 2022</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
